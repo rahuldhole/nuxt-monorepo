@@ -14,6 +14,16 @@ importers:
       vue:
         specifier: latest
         version: 3.5.22
+    devDependencies:
+      pnpm:
+        specifier: ^8.0.0
+        version: 8.15.9
+
+  apps/base: {}
+
+  apps/pharmacy: {}
+
+  apps/user: {}
 
 packages:
 
@@ -2252,6 +2262,11 @@ packages:
 
   pkg-types@2.3.0:
     resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
+
+  pnpm@8.15.9:
+    resolution: {integrity: sha512-SZQ0ydj90aJ5Tr9FUrOyXApjOrzuW7Fee13pDzL0e1E6ypjNXP0AHDHw20VLw4BO3M1XhQHkyik6aBYWa72fgQ==}
+    engines: {node: '>=16.14'}
+    hasBin: true
 
   postcss-calc@10.1.1:
     resolution: {integrity: sha512-NYEsLHh8DgG/PRH2+G9BTuUdtf9ViS+vdoQ0YA5OQdGsfN4ztiwtDWNtBl9EKeqNMFnIu8IKZ0cLxEQ5r5KVMw==}
@@ -5577,6 +5592,8 @@ snapshots:
       confbox: 0.2.2
       exsolve: 1.0.7
       pathe: 2.0.3
+
+  pnpm@8.15.9: {}
 
   postcss-calc@10.1.1(postcss@8.5.6):
     dependencies:
