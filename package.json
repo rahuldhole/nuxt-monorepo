@@ -3,14 +3,19 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev:user": "pnpm --filter user dev",
+    "dev:pharmacy": "pnpm --filter pharmacy dev",
+    "build:user": "pnpm --filter user build",
+    "build:pharmacy": "pnpm --filter pharmacy build",
+    "build:all": "pnpm run build:user && pnpm run build:pharmacy",
+    "start:user": "node .output-user/server/index.mjs",
+    "start:pharmacy": "node .output-pharmacy/server/index.mjs"
   },
   "dependencies": {
     "nuxt": "^3.19.3",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "pnpm": "^8.0.0"
   }
 }

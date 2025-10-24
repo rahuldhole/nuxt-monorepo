@@ -5,8 +5,5 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-  experimental: {
-    buildCache: true,
-  },
-  extends: ['app/user', 'app/pharmacy'],
+  extends: ['app/user'],
 })

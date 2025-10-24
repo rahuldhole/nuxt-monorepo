@@ -1,0 +1,8 @@
+{
+  "name": "pharmacy",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev --config-file nuxt.config.ts",
+    "build": "nuxt build --config-file nuxt.config.ts"
+  }
+}
